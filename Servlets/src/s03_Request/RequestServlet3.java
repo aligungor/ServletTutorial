@@ -20,7 +20,7 @@ public class RequestServlet3 extends HttpServlet{
 
     private final String UPLOAD_TO = "/Users/AliGungorGYT/Desktop/untitled folder 3";
     
-	private static final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB
+    private static final int MEMORY_THRESHOLD   = 1024 * 1024 * 3;  // 3MB
     private static final int MAX_FILE_SIZE      = 1024 * 1024 * 40; // 40MB
     private static final int MAX_REQUEST_SIZE   = 1024 * 1024 * 50; // 50MB
     

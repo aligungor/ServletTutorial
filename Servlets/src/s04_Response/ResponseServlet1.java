@@ -20,10 +20,6 @@ public class ResponseServlet1 extends HttpServlet{
 		String firstName = resp.getHeader("firstName");
 		System.out.println("firstName:" + firstName);
 
-		resp.addHeader("firstName", "levent");
-		firstName = resp.getHeader("firstName");
-		System.out.println("firstName:" + firstName);
-
 		Collection<String> firstNamesHeader = resp.getHeaders("firstName");
 		for (String str : firstNamesHeader) {
 			System.out.println("firstName:" + str);
