@@ -44,9 +44,11 @@ public class Filter implements javax.servlet.Filter {
 		System.out.println(ip);
 		if (ip.startsWith("192.168.2.")) {
 			chain.doFilter(request, response);
+			System.out.println("success");
 		} else {
 			res.sendError(HttpServletResponse.SC_FORBIDDEN,
 					"Only local network users can reach me.");
+			System.out.println("access denied");
 		}
 	}
 
