@@ -7,5 +7,3 @@ http://blog.burakkutbay.com
 https://docs.oracle.com/javase/8/docs/api/
 http://www.serefakyuz.com
 
-Feel free to use...
-Happy coding!
