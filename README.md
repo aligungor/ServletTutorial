@@ -1,4 +1,4 @@
-# ServletTutorials
+# Servlets
 
 Sources I have used;
 http://www.tutorialspoint.com/servlets/index.htm
