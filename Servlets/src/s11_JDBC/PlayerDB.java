@@ -32,7 +32,7 @@ public class PlayerDB implements PlayerDAO {
 		List<Player> players = new ArrayList<Player>();
 		String sql = "SELECT * FROM " + TABLE_PLAYERS;
 		try {
-			PreparedStatement st = dbManager.getConnection().prepareStatement(
+			PreparedStatement st = dbManager.getConnectionFromPool().prepareStatement(
 					sql);
 			ResultSet rs = st.executeQuery();
 			while (rs.next()) {
@@ -51,7 +51,7 @@ public class PlayerDB implements PlayerDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			dbManager.closeConnection();
+			dbManager.closeConnectionFromPool();
 		}
 		return players;
 	}
